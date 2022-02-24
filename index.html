@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <title>web lab 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table class="main-table width-100">
+        <tr>
+            <!-- HEADER -->
+            <th class="header width-100" colspan="2">header</th>
+<!--            <img src="web-lab1-31015.png" alt="31015" style="width: 700px">-->
+        </tr>
+        <tr>
+            <!-- PICTURE -->
+            <td class="picture width-30">
+                <img class="width-100" src="areas.png" alt="picture">
+            </td>
+            <!-- RESULTS -->
+            <td class="results width-70" rowspan="2">
+                <div class="results-table-wrapper">
+                    <table class="results-table width-100">
+                        <thead>
+                        <tr>
+                            <th class="width-30">Результат</th>
+                            <th class="width-10">x</th>
+                            <th class="width-10">y</th>
+                            <th class="width-10">r</th>
+                            <th class="width-25">Время</th>
+                            <th class="width-15">Время исполнения</th>
+                        </tr>
+                        </thead>
+                        <tbody id="results-table-body"></tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <!-- FORM -->
+            <td class="form">
+                <form id="form">
+                    <div class="form-argument-wrapper">
+                        <span>X:</span>
+                        <input type="hidden" name="x" id="x" value="1">
+                        <div class="form-x-wrapper">
+                            <input type="button" id="x-up" value="+0.5">
+                            <span id="x-span">1</span>
+                            <input type="button" id="x-down" value="-0.5">
+                        </div>
+                    </div>
+                    <div class="form-argument-wrapper">
+                        <span>Y:</span>
+                        <input type="text" name="y" id="y" placeholder="Значение от -5 до 5" autofocus>
+                    </div>
+                    <div class="form-argument-wrapper">
+                        <span>R:</span>
+                        <input type="hidden" name="r" id="r" value="1">
+                        <div class="form-r-wrapper">
+                            <label for="r1">1</label>
+                            <input class="form-checkbox" type="checkbox" id="r1">
+                        </div>
+                        <div class="form-r-wrapper">
+                            <label for="r2">2</label>
+                            <input class="form-checkbox" type="checkbox" id="r2">
+                        </div>
+                        <div class="form-r-wrapper">
+                            <label for="r3">3</label>
+                            <input class="form-checkbox" type="checkbox" id="r3">
+                        </div>
+                        <div class="form-r-wrapper">
+                            <label for="r4">4</label>
+                            <input class="form-checkbox" type="checkbox" id="r4">
+                        </div>
+                        <div class="form-r-wrapper">
+                            <label for="r5">5</label>
+                            <input class="form-checkbox" type="checkbox" id="r5">
+                        </div>
+                    </div>
+                    <input class="form-submit" type="submit">
+                </form>
+            </td>
+        </tr>
+    </table>
+<script src="script.js"></script>
+</body>
+</html>

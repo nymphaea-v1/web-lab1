@@ -1,0 +1,217 @@
+/* Buttons */
+
+input[type="button"],
+input[type="submit"] {
+    height: 35px;
+    padding: 6px;
+
+    border: 0;
+    background-color: #ffccdc;
+    color: white;
+    font-weight: bold;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: #ffa4be;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active {
+    border: 1px solid #ffa4be;
+    background-color: #ffffff;
+    color: #ffa4be;
+}
+
+/* Width classes */
+
+.width-100 {
+    width: 100%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.width-25 {
+    width: 25%;
+}
+
+.width-10 {
+    width: 10%;
+}
+
+.width-15 {
+    width: 15%;
+}
+
+/* General */
+
+.error {
+    border: 2px solid #ff0000 !important;
+    padding: 1px;
+}
+
+.main-table {
+    min-width: 750px;
+    padding: 20px;
+
+    font-family: sans-serif;
+    color: #505050;
+}
+
+.header, .picture, .form, .results {
+    border: 1px solid #fdd2e1;
+}
+
+/* Picture */
+
+.picture {
+    text-align: center;
+}
+
+.picture img {
+    max-width: 400px;
+}
+
+/* Form */
+
+#form {
+    min-width: 250px;
+
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.form-argument-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 5%;
+}
+
+.form span {
+    display: inline-block;
+    text-align: center;
+    margin: 0 2%;
+
+    font-size: 19px;
+}
+
+#x-span {
+    width: 12%;
+}
+
+.form-x-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.form-x-wrapper input {
+    width: 40%;
+}
+
+#y {
+    width: 100%;
+    height: 25px;
+
+    border: 2px solid #fdd2e1;
+}
+
+#y:focus-visible {
+    outline: 0;
+    border: 2px solid #ffa4be;
+}
+
+#y::placeholder {
+    color: #cecece;
+}
+
+.form-r-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.form-r-wrapper {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffa4be;
+}
+
+.form-checkbox {
+    width: 18px;
+    height: 18px;
+}
+
+.form-submit {
+    width: 100%;
+    margin: 5% 0;
+}
+
+/* Header */
+
+.header {
+    height: 50px;
+    background-color: #fdd2e1;
+
+    font-family: monospace;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/* Results */
+
+.results {
+    vertical-align: top;
+    border: 0;
+}
+
+.results-table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.results-table-wrapper {
+    overflow: auto;
+    max-height: 500px;
+}
+
+.results-table th {
+    position: sticky;
+    top: 0;
+
+    padding: 0 7px;
+
+    background-color: #ffa4be;
+    color: #ffffff;
+}
+
+.results-table tr {
+    height: 40px;
+    background-color: #ffffff;
+}
+
+.results-table tr:nth-child(even) {
+    background-color: #fdd2e1;
+}
+
+.results-invalid-value {
+    font-weight: bold;
+    color: #ffd500;
+}
+
+.results-hit {
+    font-weight: bold;
+    color: #37ff00;
+}
+
+.results-miss {
+    font-weight: bold;
+    color: #ff0000;
+}
+
