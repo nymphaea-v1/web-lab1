@@ -39,7 +39,7 @@
         $format = '{"result":%s, "x":"%s", "y":"%s", "r":%d, "time":%d, "execution":%s}';
         $time = time();
         $execution = microtime(true) - $_SERVER["REQUEST_TIME_FLOAT"];
-        $execution_millis = number_format($execution * 1000000);
+        $execution_millis = number_format($execution * 1000000, 0);
 
         echo sprintf($format, $result, $x, $y, $r, $time, $execution_millis);
     }

@@ -28,9 +28,9 @@ buttonDown.addEventListener('click', () => {
 const textInputY = document.getElementById("y")
 
 textInputY.addEventListener("change", () => {
-    let value = parseFloat(textInputY.value)
+    const value = textInputY.value
 
-    if (isNaN(value) || value > 5 || value < -5) {
+    if (value === "" || isNaN(value) || value > 5 || value < -5) {
         textInputY.classList.add("error")
     } else textInputY.classList.remove("error")
 })
@@ -78,7 +78,6 @@ const validateForm = () => {
 }
 
 const proceedResponse = (request) => {
-    console.log(request.getAllResponseHeaders())
     console.log(request.responseText)
 
     const response = JSON.parse(request.responseText)
@@ -131,4 +130,3 @@ form.addEventListener("submit", (event) => {
         proceedResponse(request)
     }
 })
-
